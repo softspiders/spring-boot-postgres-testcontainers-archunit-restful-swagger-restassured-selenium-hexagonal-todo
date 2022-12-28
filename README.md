@@ -25,7 +25,7 @@
 
 ## Direct ancestors
 
-[***- selenium***: spring-boot-psql-testcontainers-todo](https://softspiders.jetbrains.space/p/softspiders/repositories/spring-boot-psql-testcontainers-selenium-todo/files/spring-boot-psql-testcontainers-todo/README.md)
+[***- selenium***: spring-boot-psql-testcontainers-restassured-restful-todo](TBD)
 
 ---
 

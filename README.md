@@ -28,7 +28,7 @@
 
 ## Direct descendant
 
-[***+ selenium***: spring-boot-psql-testcontainers-restassured-selenium-restful-todo](https://github.com/softspiders/springboot-postgres-testcontainers-restassured-selenium-restful-todo-app-starter)
+[***+ selenium***: spring-boot-psql-testcontainers-restassured-selenium-restful-todo](https://github.com/softspiders/springboot-postgres-testcontainers-restassured-selenium-restful-todo-app-starter#readme)
 
 ---
 

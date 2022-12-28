@@ -23,7 +23,7 @@
 
 ## Direct ancestor
 
-[***- -rest***: spring-boot-psql-testcontainers-todo](TBD)
+[***- rest***: spring-boot-psql-testcontainers-todo](TBD)
 
 ## Direct descendant
 

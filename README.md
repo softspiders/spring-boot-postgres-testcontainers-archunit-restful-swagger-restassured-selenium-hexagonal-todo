@@ -1,4 +1,8 @@
-[SOFTSPIDERS](https://github.com/softspiders/softspiders)
+<div align="center">
+    <a href="https://github.com/softspiders/softspiders">
+      <img src="https://avatars.githubusercontent.com/u/47006425?v=4"width="100" height="100"/>
+    </a>
+</div> 
 
 # Spring Boot with PostgresSQL, Flyway, Testcontainers, REST Assured and Selenium Restful ToDo application starter
 
@@ -21,7 +25,7 @@
 
 ## Direct ancestors
 
-[***- selenium***: spring-boot-psql-testcontainers-restassured-restful-todo](TBD)
+[***- selenium***: spring-boot-psql-testcontainers-todo](https://softspiders.jetbrains.space/p/softspiders/repositories/spring-boot-psql-testcontainers-selenium-todo/files/spring-boot-psql-testcontainers-todo/README.md)
 
 ---
 

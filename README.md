@@ -12,7 +12,6 @@
 - flyway
 - psql
 - rest
-- rest-assured
 - spring-boot
 - spring-data-jpa
 - starter
@@ -24,11 +23,11 @@
 
 ## Direct ancestor
 
-[***- -restassured***: spring-boot-psql-testcontainers-restful-todo](TBD)
+[***- -rest***: spring-boot-psql-testcontainers-todo](TBD)
 
 ## Direct descendant
 
-[***+ selenium***: spring-boot-psql-testcontainers-restassured-selenium-restful-todo](https://github.com/softspiders/springboot-postgres-testcontainers-restassured-selenium-restful-todo-app-starter#readme)
+[***+ restassured***: spring-boot-psql-testcontainers-restassured-restful-todo](https://github.com/softspiders/springboot-postgres-testcontainers-restassured-selenium-restful-todo-app-starter#readme)
 
 ---
 

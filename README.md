@@ -4,7 +4,7 @@
     </a>
 </div> 
 
-# Spring Boot with PostgresSQL, Flyway, Testcontainers, REST Assured and Selenium Restful ToDo application starter
+# Spring Boot with PostgresSQL, Flyway, Testcontainers, REST Assured Restful ToDo application starter
 
 
 ## Feature tags
@@ -13,7 +13,6 @@
 - psql
 - rest
 - rest-assured
-- selenium
 - spring-boot
 - spring-data-jpa
 - starter
@@ -23,9 +22,13 @@
 
 ---
 
-## Direct ancestors
+## Direct ancestor
 
-[***- selenium***: spring-boot-psql-testcontainers-restassured-restful-todo](TBD)
+[***- -restassured***: spring-boot-psql-testcontainers-restful-todo](TBD)
+
+## Direct descendant
+
+[***+ selenium***: spring-boot-psql-testcontainers-restassured-selenium-restful-todo](https://github.com/softspiders/springboot-postgres-testcontainers-restassured-selenium-restful-todo-app-starter)
 
 ---
 
@@ -33,9 +36,7 @@
 
 [Alexander Lapygin](https://github.com/AlexanderLapygin) <<alexanderlapygin@gmail.com>>
 
-## Inspiration
-
-[Testcontainers SpringBoot Quickstart](https://github.com/testcontainers/testcontainers-java-spring-boot-quickstart)
+---
 
 ## Requirements
 

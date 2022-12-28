@@ -16,7 +16,6 @@
 	<properties>
 		<java.version>17</java.version>
 		<testcontainers.version>1.17.5</testcontainers.version>
-		<selenium.version>4.6.0</selenium.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -54,17 +53,6 @@
 		<dependency>
 			<groupId>org.testcontainers</groupId>
 			<artifactId>postgresql</artifactId>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.testcontainers</groupId>
-			<artifactId>selenium</artifactId>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.seleniumhq.selenium</groupId>
-			<artifactId>selenium-chrome-driver</artifactId>
-			<version>${selenium.version}</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>

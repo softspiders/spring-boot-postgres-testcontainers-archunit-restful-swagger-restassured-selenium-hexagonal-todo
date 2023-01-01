@@ -9,8 +9,8 @@
 
 ## Feature tags
 
-- ca
 - flyway
+- hexagonal
 - maven
 - psql
 - spring-boot

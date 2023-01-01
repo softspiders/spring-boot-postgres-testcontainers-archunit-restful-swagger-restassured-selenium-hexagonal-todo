@@ -1,10 +1,11 @@
 package org.softspiders.todos.repository;
 
-import org.softspiders.todos.entity.Todo;
+import org.softspiders.todos.adapter.jpa.todo.entity.TodoEntity;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.softspiders.todos.adapter.jpa.todo.repository.TodoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
@@ -43,9 +44,9 @@ class TodoRepositoryTest {
     @BeforeEach
     void setUp() {
         repository.deleteAll();
-        repository.save(new Todo(null, "Todo Item 1", true, 1));
-        repository.save(new Todo(null, "Todo Item 2", false, 2));
-        repository.save(new Todo(null, "Todo Item 3", false, 3));
+        repository.save(new TodoEntity(null, "Todo Item 1", true, 1));
+        repository.save(new TodoEntity(null, "Todo Item 2", false, 2));
+        repository.save(new TodoEntity(null, "Todo Item 3", false, 3));
     }
 
     @Test

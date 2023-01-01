@@ -1,4 +1,4 @@
-package org.softspiders.todos.entity;
+package org.softspiders.todos.adapter.jpa.todo.entity;
 
 import org.hibernate.annotations.GenericGenerator;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
@@ -7,7 +7,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "todos")
-public class Todo {
+public class TodoEntity {
     @Id
     @GeneratedValue(generator = "uuid")
     @GenericGenerator(name = "uuid", strategy = "uuid2")
@@ -22,10 +22,10 @@ public class Todo {
     @Column(name = "order_number")
     private Integer order;
 
-    public Todo() {
+    public TodoEntity() {
     }
 
-    public Todo(String id, String title, Boolean completed, Integer order) {
+    public TodoEntity(String id, String title, Boolean completed, Integer order) {
         this.id = id;
         this.title = title;
         this.completed = completed;

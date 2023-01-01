@@ -9,7 +9,9 @@
 
 ## Feature tags
 
+- ca
 - flyway
+- maven
 - psql
 - spring-boot
 - spring-data-jpa

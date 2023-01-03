@@ -10,24 +10,26 @@
 ## Feature tags
 
 - flyway
+- hexagonal
+- maven
 - psql
 - rest
 - spring-boot
 - spring-data-jpa
 - starter
-- testcontainers
 - template
+- testcontainers
 - todo
 
 ---
 
 ## Direct ancestor
 
-[***- rest***: spring-boot-psql-testcontainers-todo](TBD)
+[***- rest***: spring-boot-psql-testcontainers-todo](https://github.com/softspiders/springboot-postgres-testcontainers-restassured-selenium-restful-todo-app-starter/tree/springboot-psql-testcontainers-hexagonal-todo#readme)
 
 ## Direct descendant
 
-[***+ restassured***: spring-boot-psql-testcontainers-restassured-restful-todo](https://github.com/softspiders/springboot-postgres-testcontainers-restassured-selenium-restful-todo-app-starter/tree/spring-boot-psql-testcontainers-restassured-restful-todo#readme)
+[***+ restassured***: spring-boot-psql-testcontainers-restassured-restful-todo](https://github.com/softspiders/springboot-postgres-testcontainers-restassured-selenium-restful-todo-app-starter/tree/spring-boot-psql-testcontainers-restassured-restful-hexagonal-todo#readme)
 
 ---
 

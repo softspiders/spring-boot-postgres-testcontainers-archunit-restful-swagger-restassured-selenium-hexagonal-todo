@@ -1,7 +1,7 @@
 package org.softspiders.todos.web;
 
-import org.softspiders.todos.entity.Todo;
-import org.softspiders.todos.repository.TodoRepository;
+import org.softspiders.todos.adapter.jpa.todo.entity.TodoEntity;
+import org.softspiders.todos.adapter.jpa.todo.repository.TodoRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -18,21 +18,21 @@ public class TodoController {
     }
 
     @GetMapping
-    public Iterable<Todo> getAll() {
+    public Iterable<TodoEntity> getAll() {
         return repository.findAll();
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Todo> getById(@PathVariable String id) {
+    public ResponseEntity<TodoEntity> getById(@PathVariable String id) {
         return repository.findById(id)
                 .map(ResponseEntity::ok)
                 .orElseThrow(() -> new TodoNotFoundException(id));
     }
 
     @PostMapping
-    public ResponseEntity<Todo> save(@Valid @RequestBody Todo todo) {
+    public ResponseEntity<TodoEntity> save(@Valid @RequestBody TodoEntity todo) {
         todo.setId(null);
-        Todo savedTodo = repository.save(todo);
+        TodoEntity savedTodo = repository.save(todo);
         return ResponseEntity
                 .status(HttpStatus.CREATED)
                 .header("Location", savedTodo.getUrl())
@@ -40,8 +40,8 @@ public class TodoController {
     }
 
     @PatchMapping("/{id}")
-    public ResponseEntity<Todo> update(@PathVariable String id, @Valid @RequestBody Todo todo) {
-        Todo existingTodo = repository.findById(id).orElseThrow(() -> new TodoNotFoundException(id));
+    public ResponseEntity<TodoEntity> update(@PathVariable String id, @Valid @RequestBody TodoEntity todo) {
+        TodoEntity existingTodo = repository.findById(id).orElseThrow(() -> new TodoNotFoundException(id));
         if(todo.getCompleted() != null) {
             existingTodo.setCompleted(todo.getCompleted());
         }
@@ -51,13 +51,13 @@ public class TodoController {
         if(todo.getTitle() != null) {
             existingTodo.setTitle(todo.getTitle());
         }
-        Todo updatedTodo = repository.save(existingTodo);
+        TodoEntity updatedTodo = repository.save(existingTodo);
         return ResponseEntity.ok(updatedTodo);
     }
 
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteById(@PathVariable String id) {
-        Todo todo = repository.findById(id).orElseThrow(() -> new TodoNotFoundException(id));
+        TodoEntity todo = repository.findById(id).orElseThrow(() -> new TodoNotFoundException(id));
         repository.delete(todo);
         return ResponseEntity.ok().build();
     }

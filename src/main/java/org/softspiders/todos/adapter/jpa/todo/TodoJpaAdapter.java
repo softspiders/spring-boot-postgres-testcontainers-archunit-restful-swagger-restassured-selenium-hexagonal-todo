@@ -21,8 +21,28 @@ public class TodoJpaAdapter implements TodoJpaPort {
     }
 
     @Override
+    public TodoDomainModel getById() {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
     public TodoDomainModel createTodo(TodoDomainModel todo) {
         var createdTodo = todoRepository.save(TODO_JPA_MAPPER.toEntity(todo));
         return TODO_JPA_MAPPER.toDomainModel(createdTodo);
+    }
+
+    @Override
+    public TodoDomainModel updateTodo(TodoDomainModel todo) {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public void deleteById(String id) {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public void deleteAll() {
+        throw new UnsupportedOperationException();
     }
 }

@@ -1,4 +1,4 @@
-package org.softspiders.todos.domain.model.port.spi.todo;
+package org.softspiders.todos.domain.port.spi.todo;
 
 import java.util.List;
 import org.softspiders.todos.domain.model.todo.TodoDomainModel;
@@ -19,7 +19,7 @@ public interface TodoJpaPort {
      *
      * @return todo
      */
-    TodoDomainModel getById();
+    TodoDomainModel getById(String id);
 
     /**
      * Creates a new todo

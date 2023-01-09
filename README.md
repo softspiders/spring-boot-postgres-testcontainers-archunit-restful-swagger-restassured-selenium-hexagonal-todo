@@ -12,7 +12,7 @@
 - flyway
 - hexagonal
 - maven
-- psql
+- postgres
 - spring-boot
 - spring-data-jpa
 - starter

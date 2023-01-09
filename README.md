@@ -17,6 +17,7 @@
 - spring-boot
 - spring-data-jpa
 - starter
+- swagger
 - template
 - testcontainers
 - todo

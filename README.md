@@ -10,15 +10,15 @@
 ## Feature tags
 
 - flyway
-- psql
+- postgres
 - rest
 - rest-assured
 - selenium
 - spring-boot
 - spring-data-jpa
 - starter
-- testcontainers
 - template
+- testcontainers
 - todo
 
 ---

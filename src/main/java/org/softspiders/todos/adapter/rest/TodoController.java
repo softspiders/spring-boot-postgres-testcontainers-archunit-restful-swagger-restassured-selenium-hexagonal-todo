@@ -35,8 +35,8 @@ public class TodoController {
 
   @Operation(summary = "Save a new todo of the given todoId")
   @PostMapping
-  public TodoDto save(@Valid @RequestBody CreateTodoDto todo) {
-    return TODO_REST_MAPPER.toDto(todoServicePort.save(TODO_REST_MAPPER.toDomainModel(todo)));
+  public TodoDto create(@Valid @RequestBody CreateTodoDto todo) {
+    return TODO_REST_MAPPER.toDto(todoServicePort.create(TODO_REST_MAPPER.toDomainModel(todo)));
   }
 
   @Operation(summary = "Update the todo")

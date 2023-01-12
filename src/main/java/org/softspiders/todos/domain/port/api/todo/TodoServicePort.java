@@ -24,12 +24,12 @@ public interface TodoServicePort {
     TodoDomainModel getTodoById(String id);
 
     /**
-     * Saves a new todo of the given todoId
+     * Create a new todo of the given todoId
      *
-     * @param todoDomainModel data about todo to create or update it
+     * @param todoDomainModel data about todo to create it
      * @return a newly created or updated todo
      */
-    TodoDomainModel save(TodoDomainModel todoDomainModel);
+    TodoDomainModel create(TodoDomainModel todoDomainModel);
 
     /**
      * Update the todo

@@ -31,7 +31,7 @@ public class TodoApplicationService implements TodoServicePort {
   }
 
   @Override
-  public TodoDomainModel save(TodoDomainModel todoDomainModel) {
+  public TodoDomainModel create(TodoDomainModel todoDomainModel) {
     throw new UnsupportedOperationException();
   }
 

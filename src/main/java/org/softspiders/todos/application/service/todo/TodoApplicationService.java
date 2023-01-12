@@ -8,8 +8,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-import static org.softspiders.todos.application.service.todo.TodoApplicationServiceMapper.TODO_APPLICATION_SERVICE_MAPPER;
-
 @Service
 @RequiredArgsConstructor
 public class TodoApplicationService implements TodoServicePort {
@@ -23,7 +21,8 @@ public class TodoApplicationService implements TodoServicePort {
 
   @Override
   public TodoDomainModel getTodoById(String id) {
-    return TODO_APPLICATION_SERVICE_MAPPER.toDomainModel(todoJpaPort.getById(id));
+//    return TODO_APPLICATION_SERVICE_MAPPER.toDomainModel(todoJpaPort.getById(id));
+    return todoJpaPort.getById(id);
   }
 
   @Override
@@ -38,11 +37,11 @@ public class TodoApplicationService implements TodoServicePort {
 
   @Override
   public void deleteById(String id) {
-    throw new UnsupportedOperationException();
+    todoJpaPort.deleteById(id);
   }
 
   @Override
   public void deleteAll() {
-    throw new UnsupportedOperationException();
+    todoJpaPort.deleteAll();
   }
 }

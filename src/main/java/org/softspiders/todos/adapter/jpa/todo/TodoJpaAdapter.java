@@ -23,7 +23,7 @@ public class TodoJpaAdapter implements TodoJpaPort {
 
     @Override
     public TodoDomainModel getById(String id) {
-        throw new UnsupportedOperationException();
+        return TODO_JPA_MAPPER.toDomainModel(todoRepository.getById(id));
     }
 
     @Override
@@ -40,11 +40,11 @@ public class TodoJpaAdapter implements TodoJpaPort {
 
     @Override
     public void deleteById(String id) {
-        throw new UnsupportedOperationException();
+        todoRepository.deleteById(id);
     }
 
     @Override
     public void deleteAll() {
-        throw new UnsupportedOperationException();
+        todoRepository.deleteAll();
     }
 }

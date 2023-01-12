@@ -32,7 +32,7 @@ public class TodoApplicationService implements TodoServicePort {
 
   @Override
   public TodoDomainModel create(TodoDomainModel todoDomainModel) {
-    throw new UnsupportedOperationException();
+    return todoJpaPort.createTodo(todoDomainModel);
   }
 
   @Override

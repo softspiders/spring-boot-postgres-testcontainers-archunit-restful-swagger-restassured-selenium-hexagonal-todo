@@ -24,10 +24,6 @@ public class TodoApplicationService implements TodoServicePort {
   @Override
   public TodoDomainModel getTodoById(String id) {
     return TODO_APPLICATION_SERVICE_MAPPER.toDomainModel(todoJpaPort.getById(id));
-
-//    return repository.findById(id)
-//            .map(ResponseEntity::ok)
-//            .orElseThrow(() -> new TodoNotFoundException(id));
   }
 
   @Override
@@ -37,7 +33,7 @@ public class TodoApplicationService implements TodoServicePort {
 
   @Override
   public TodoDomainModel update(String id, TodoDomainModel todoDomainModel) {
-    throw new UnsupportedOperationException();
+    return todoJpaPort.updateTodo(todoDomainModel);
   }
 
   @Override

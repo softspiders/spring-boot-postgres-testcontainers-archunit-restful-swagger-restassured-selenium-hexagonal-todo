@@ -1,6 +1,7 @@
 package org.softspiders.todos.adapter.jpa.todo;
 
 import lombok.RequiredArgsConstructor;
+import org.softspiders.todos.adapter.jpa.todo.entity.TodoEntity;
 import org.softspiders.todos.adapter.jpa.todo.repository.TodoRepository;
 import org.softspiders.todos.domain.port.spi.todo.TodoJpaPort;
 import org.softspiders.todos.domain.model.todo.TodoDomainModel;
@@ -33,7 +34,8 @@ public class TodoJpaAdapter implements TodoJpaPort {
 
     @Override
     public TodoDomainModel updateTodo(TodoDomainModel todo) {
-        throw new UnsupportedOperationException();
+        TodoEntity todoEntity = todoRepository.save(TODO_JPA_MAPPER.toEntity(todo));
+        return TODO_JPA_MAPPER.toDomainModel(todoEntity);
     }
 
     @Override

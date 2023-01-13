@@ -14,6 +14,7 @@
 - maven
 - postgres
 - rest
+- rest-assured
 - spring-boot
 - spring-data-jpa
 - starter
@@ -26,11 +27,11 @@
 
 ## Direct ancestor
 
-[***- rest***: spring-boot-psql-testcontainers-todo](https://github.com/softspiders/springboot-postgres-testcontainers-restassured-selenium-restful-todo-app-starter/tree/springboot-psql-testcontainers-hexagonal-todo#readme)
+[***- restassured***: spring-boot-psql-testcontainers-todo](https://github.com/softspiders/springboot-postgres-testcontainers-restassured-selenium-restful-todo-app-starter/tree/springboot-psql-testcontainers-restassured-hexagonal-todo#readme)
 
 ## Direct descendant
 
-[***+ restassured***: spring-boot-psql-testcontainers-restassured-restful-todo](https://github.com/softspiders/springboot-postgres-testcontainers-restassured-selenium-restful-todo-app-starter/tree/spring-boot-psql-testcontainers-restassured-restful-hexagonal-todo#readme)
+[***+ archunit***: spring-boot-psql-testcontainers-restassured-restful-todo](https://github.com/softspiders/springboot-postgres-testcontainers-restassured-selenium-restful-todo-app-starter/tree/spring-boot-psql-testcontainers-restassured-restful-archunit-hexagonal-todo#readme)
 
 ---
 

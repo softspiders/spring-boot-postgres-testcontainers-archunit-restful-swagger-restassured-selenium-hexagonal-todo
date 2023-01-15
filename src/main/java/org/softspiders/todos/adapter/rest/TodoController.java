@@ -7,7 +7,10 @@ import io.swagger.v3.oas.annotations.Operation;
 import org.softspiders.todos.adapter.rest.dto.CreateTodoDto;
 import org.softspiders.todos.adapter.rest.dto.TodoDetailsDto;
 import org.softspiders.todos.adapter.rest.dto.TodoDto;
+import org.softspiders.todos.domain.model.todo.TodoDomainModel;
 import org.softspiders.todos.domain.port.api.todo.TodoServicePort;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
@@ -35,8 +38,12 @@ public class TodoController {
 
   @Operation(summary = "Save a new todo of the given todoId")
   @PostMapping
-  public TodoDto create(@Valid @RequestBody CreateTodoDto todo) {
-    return TODO_REST_MAPPER.toDto(todoServicePort.create(TODO_REST_MAPPER.toDomainModel(todo)));
+  public ResponseEntity<TodoDto> create(@Valid @RequestBody CreateTodoDto todo) {
+    TodoDomainModel todoDomainModel = todoServicePort.create(TODO_REST_MAPPER.toDomainModel(todo));
+    TodoDto todoDto = TODO_REST_MAPPER.toDto(todoDomainModel);
+    return ResponseEntity
+            .status(HttpStatus.CREATED)
+            .body(todoDto);
   }
 
   @Operation(summary = "Update the todo")

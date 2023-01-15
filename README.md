@@ -9,6 +9,7 @@
 
 ## Feature tags
 
+- archunit
 - flyway
 - hexagonal
 - maven

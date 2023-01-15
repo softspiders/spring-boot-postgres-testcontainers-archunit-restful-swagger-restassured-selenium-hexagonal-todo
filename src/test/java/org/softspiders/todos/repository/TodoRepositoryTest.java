@@ -1,5 +1,6 @@
 package org.softspiders.todos.repository;
 
+import lombok.RequiredArgsConstructor;
 import org.softspiders.todos.adapter.jpa.todo.entity.TodoEntity;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
@@ -17,9 +18,13 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @DataJpaTest
 @AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
+//@RequiredArgsConstructor
 class TodoRepositoryTest {
     static PostgreSQLContainer<?> postgres = new PostgreSQLContainer<>("postgres:14-alpine")
             .withExposedPorts(5432);
+
+    @Autowired
+    TodoRepository repository;
 
     @DynamicPropertySource
     static void configureProperties(DynamicPropertyRegistry registry) {
@@ -37,9 +42,6 @@ class TodoRepositoryTest {
     static void afterAll() {
         postgres.stop();
     }
-
-    @Autowired
-    TodoRepository repository;
 
     @BeforeEach
     void setUp() {

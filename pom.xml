@@ -15,13 +15,26 @@
 	<description>Testcontainers Java and Spring Boot QuickStart</description>
 	<properties>
 		<java.version>17</java.version>
-		<org.mapstruct.version>1.5.2.Final</org.mapstruct.version>
+		<apache.commons.version>4.4</apache.commons.version>
+		<org.mapstruct.version>1.5.3.Final</org.mapstruct.version>
+		<archunit.version>1.0.0-rc1</archunit.version>
 		<testcontainers.version>1.17.5</testcontainers.version>
 	</properties>
 	<dependencies>
+		<!-- Проверить, нужно ли здесь (см. hexagonal-demo) -->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
+		</dependency>
+		<!-- External Dependencies -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-collections4</artifactId>
+			<version>${apache.commons.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.mapstruct</groupId>
@@ -50,9 +63,23 @@
 			<artifactId>postgresql</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+		<!-- Test dependencies -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.tngtech.archunit</groupId>
+			<artifactId>archunit-junit5-api</artifactId>
+			<version>${archunit.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.tngtech.archunit</groupId>
+			<artifactId>archunit-junit5-engine</artifactId>
+			<version>${archunit.version}</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>

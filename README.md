@@ -4,22 +4,25 @@
     </a>
 </div> 
 
-# ToDo service starter with hexagonal architecture on Spring Boot, PostgresSQL, Flyway, Testcontainers
+# ToDo service starter with hexagonal architecture on Spring Boot, PostgreSQL, Flyway, ArchUnit and Testcontainers
+
+## Tag-context
+
+- postgres
+- spring-boot
+- starter
+- template
+- todo
 
 
-## Feature tags
+## Tags
 
 - archunit
 - flyway
 - hexagonal
 - maven
-- postgres
-- spring-boot
 - spring-data-jpa
-- starter
-- template
 - testcontainers
-- todo
 
 ---
 

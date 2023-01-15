@@ -9,6 +9,7 @@
 
 ## Feature tags
 
+- archunit
 - flyway
 - hexagonal
 - maven
@@ -19,6 +20,12 @@
 - template
 - testcontainers
 - todo
+
+---
+
+## Direct ancestors
+
+[***- archunit***: springboot-psql-testcontainers-restful-todo](https://github.com/softspiders/springboot-postgres-testcontainers-restassured-selenium-restful-todo-app-starter/blob/spring-boot-psql-testcontainers-hexagonal-todo/README.md)
 
 ---
 

@@ -1,6 +1,7 @@
 package org.softspiders.todos.domain.model.todo;
 
 import lombok.Data;
+import lombok.RequiredArgsConstructor;
 
 @Data
 public class TodoDomainModel {

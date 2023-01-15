@@ -4,7 +4,7 @@
     </a>
 </div> 
 
-# Spring Boot with PostgresSQL, Flyway, Testcontainers, REST Assured Restful ToDo application starter
+# ToDo service starter with hexagonal architecture on Spring Boot, PostgresSQL, Flyway, Testcontainers
 
 
 ## Feature tags

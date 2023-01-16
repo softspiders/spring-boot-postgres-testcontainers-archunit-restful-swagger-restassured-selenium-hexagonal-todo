@@ -17,7 +17,7 @@
 		<java.version>17</java.version>
 		<apache.commons.version>4.4</apache.commons.version>
 		<org.mapstruct.version>1.5.3.Final</org.mapstruct.version>
-		<archunit.version>1.0.0-rc1</archunit.version>
+		<archunit.version>1.0.1</archunit.version>
 		<testcontainers.version>1.17.5</testcontainers.version>
 	</properties>
 	<dependencies>

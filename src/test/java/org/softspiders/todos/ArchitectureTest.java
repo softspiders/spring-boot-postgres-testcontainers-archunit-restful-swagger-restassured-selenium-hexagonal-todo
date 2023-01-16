@@ -43,7 +43,7 @@ public class ArchitectureTest {
      * A rule that checks that none of the given classes access Java Util Logging.
      */
     @ArchTest
-    public static final ArchRule JAVA_UTIL_LOGGING_IS_FORBIDDEN = NO_CLASSES_SHOULD_USE_JAVA_UTIL_LOGGING;
+    public static final ArchRule JAVA_UTIL_LOGGING_IS_FORBIDDEN = NO_CLASSES_SHOULD_USE_JAVA_UTIL_LOGGING.because("We use Log4J");
 
     /**
      * A rule that checks that none of the given classes uses field injection.

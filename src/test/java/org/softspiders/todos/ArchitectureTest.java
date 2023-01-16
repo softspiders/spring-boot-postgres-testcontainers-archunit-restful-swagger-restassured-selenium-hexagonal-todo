@@ -24,13 +24,14 @@ import static com.tngtech.archunit.lang.syntax.ArchRuleDefinition.constructors;
 import static com.tngtech.archunit.library.Architectures.onionArchitecture;
 import static com.tngtech.archunit.library.GeneralCodingRules.*;
 import static com.tngtech.archunit.library.GeneralCodingRules.NO_CLASSES_SHOULD_ACCESS_STANDARD_STREAMS;
+import com.tngtech.archunit.core.importer.ImportOption;
 import static org.apache.commons.lang3.StringUtils.EMPTY;
 import static org.apache.commons.lang3.StringUtils.substringAfterLast;
 
 /**
  * Architecture tests are used to make sure that application architecture patterns and principles are followed in appropriate manner
  */
-@AnalyzeClasses(packages = "org.softspiders.todos")
+@AnalyzeClasses(packages = "org.softspiders.todos", importOptions = ImportOption.DoNotIncludeTests.class)
 @SuppressWarnings("unused")
 public class ArchitectureTest {
 
@@ -48,15 +49,15 @@ public class ArchitectureTest {
     /**
      * A rule that checks that none of the given classes uses field injection.
      */
-    @ArchIgnore
+//    @ArchIgnore
     @ArchTest
     public static final ArchRule FIELD_INJECTION_SHOULD_NOT_BE_USED = NO_CLASSES_SHOULD_USE_FIELD_INJECTION;
 
-//    /**
-//     * A rule that checks that none of the given classes access the standard streams System.out and System.err.
-//     */
-//    @ArchTest
-//    public static final ArchRule STANDARD_OUTPUT_STREAMS_SHOULD_NOT_BE_USED = NO_CLASSES_SHOULD_ACCESS_STANDARD_STREAMS;
+    /**
+     * A rule that checks that none of the given classes access the standard streams System.out and System.err.
+     */
+    @ArchTest
+    public static final ArchRule STANDARD_OUTPUT_STREAMS_SHOULD_NOT_BE_USED = NO_CLASSES_SHOULD_ACCESS_STANDARD_STREAMS;
 
     /**
      * Architecture test to check if hexagonal architecture pattern is followed

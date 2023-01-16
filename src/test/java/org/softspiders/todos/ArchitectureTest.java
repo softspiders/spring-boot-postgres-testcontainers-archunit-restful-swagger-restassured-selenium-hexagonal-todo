@@ -49,7 +49,6 @@ public class ArchitectureTest {
     /**
      * A rule that checks that none of the given classes uses field injection.
      */
-//    @ArchIgnore
     @ArchTest
     public static final ArchRule FIELD_INJECTION_SHOULD_NOT_BE_USED = NO_CLASSES_SHOULD_USE_FIELD_INJECTION;
 
@@ -62,12 +61,14 @@ public class ArchitectureTest {
     /**
      * Architecture test to check if hexagonal architecture pattern is followed
      */
-//    @ArchTest
-//    public static final ArchRule HEXAGONAL_ARCH_RULE = onionArchitecture()
-//            .domainModels("org.softspiders.todos.domain.model..")
-//            .domainServices("org.softspiders.todos.domain.port..")
+    @ArchIgnore
+    @ArchTest
+    public static final ArchRule HEXAGONAL_ARCH_RULE = onionArchitecture()
+            .domainModels("org.softspiders.todos.domain.model..")
+            .domainServices("org.softspiders.todos.domain.port..")
+            .adapter("jpa", "org.softspiders.todos.adapter.jpa..");
+
 //            .applicationServices("org.softspiders.todos.application..")
-//            .adapter("jpa", "org.softspiders.todos.adapter.jpa..")
 //            .adapter("rest", "org.softspiders.todos.adapter.rest..");
 
 //    /**

@@ -2,7 +2,7 @@ package org.softspiders.todos.adapter.jpa.todo;
 
 import lombok.RequiredArgsConstructor;
 import org.softspiders.todos.adapter.jpa.todo.repository.TodoRepository;
-import org.softspiders.todos.domain.model.port.spi.todo.TodoJpaPort;
+import org.softspiders.todos.domain.port.spi.todo.TodoJpaPort;
 import org.softspiders.todos.domain.model.todo.TodoDomainModel;
 import org.springframework.stereotype.Component;
 

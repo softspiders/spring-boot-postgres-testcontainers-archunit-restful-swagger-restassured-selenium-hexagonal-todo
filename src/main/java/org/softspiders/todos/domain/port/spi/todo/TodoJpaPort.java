@@ -1,4 +1,4 @@
-package org.softspiders.todos.domain.model.port.spi.todo;
+package org.softspiders.todos.domain.port.spi.todo;
 
 import org.softspiders.todos.domain.model.todo.TodoDomainModel;
 

@@ -4,7 +4,7 @@
     </a>
 </div> 
 
-# Spring Boot with PostgresSQL, Flyway, Testcontainers, REST Assured Restful ToDo application starter
+# Spring Boot with PostgresSQL, Flyway, ArchUnit, Testcontainers, REST Assured Restful ToDo application starter
 
 
 ## Feature tags

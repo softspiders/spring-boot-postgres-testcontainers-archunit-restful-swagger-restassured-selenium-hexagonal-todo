@@ -5,7 +5,6 @@ import com.tngtech.archunit.core.domain.JavaConstructor;
 import com.tngtech.archunit.core.domain.JavaField;
 import com.tngtech.archunit.core.domain.JavaType;
 import com.tngtech.archunit.junit.AnalyzeClasses;
-import com.tngtech.archunit.junit.ArchIgnore;
 import com.tngtech.archunit.junit.ArchTest;
 import com.tngtech.archunit.lang.ArchCondition;
 import com.tngtech.archunit.lang.ArchRule;
@@ -69,21 +68,21 @@ public class ArchitectureTest {
             .applicationServices("org.softspiders.todos.application..")
             .adapter("rest", "org.softspiders.todos.adapter.rest..");
 
-//    /**
-//     * Architecture test to check following arch conditions:
-//     * <ul>
-//     *     <li>Primary port is dependent on primary ports from other packages</li>
-//     *     <li>Primary port is dependent on secondary ports from same package</li>
-//     * </ul>
-//     */
-//    @ArchTest
-//    public static final ArchRule PRIMARY_PORT_ARCH_RULE = classes()
-//            .that()
-//            .resideInAPackage("org.softspiders.todos.application.service..")
-//            .and()
-//            .haveSimpleNameEndingWith("ApplicationService")
-//            .should(PRIMARY_PORT_ARCH_CONDITION);
-//
+    /**
+     * Architecture test to check following arch conditions:
+     * <ul>
+     *     <li>Primary port is dependent on primary ports from other packages</li>
+     *     <li>Primary port is dependent on secondary ports from same package</li>
+     * </ul>
+     */
+    @ArchTest
+    public static final ArchRule PRIMARY_PORT_ARCH_RULE = classes()
+            .that()
+            .resideInAPackage("org.softspiders.todos.application.service..")
+            .and()
+            .haveSimpleNameEndingWith("ApplicationService")
+            .should(PRIMARY_PORT_ARCH_CONDITION);
+
     /**
      * Architecture test to check following arch conditions:
      * <ul>
@@ -103,32 +102,31 @@ public class ArchitectureTest {
             .dependOnClassesThat(resideOutsideOfPackage("org.softspiders.todos.domain.port.spi.."));
 
 
-//    /**
-//     * Architecture test to check if controller depends on primary port from the same package
-//     */
-//    @ArchTest
-//    public static final ArchRule REST_DEPENDENCY_ARCH_RULE = classes()
-//            .that()
-//            .resideInAPackage("org.softspiders.todos.adapter.rest..")
-//            .and()
-//            .haveSimpleNameEndingWith("Controller")
-//            .should()
-//            .dependOnClassesThat(resideInAPackage("org.softspiders.todos.domain.port.api.."))
-//            .andShould(REST_DEPENDENCY_ARCH_CONDITION);
-//
-//    /**
-//     * Architecture test to check if controller depends on single primary port
-//     */
-//    @ArchTest
-//    public static final ArchRule REST_CONSTRUCTOR_ARCH_RULE = constructors()
-//            .that()
-//            .areDeclaredInClassesThat()
-//            .resideInAPackage("org.softspiders.todos.adapter.rest..")
-//            .and()
-//            .areDeclaredInClassesThat()
-//            .haveSimpleNameEndingWith("Controller")
-//            .should(REST_CONSTRUCTOR_ARCH_CONDITION);
+    /**
+     * Architecture test to check if controller depends on primary port from the same package
+     */
+    @ArchTest
+    public static final ArchRule REST_DEPENDENCY_ARCH_RULE = classes()
+            .that()
+            .resideInAPackage("org.softspiders.todos.adapter.rest..")
+            .and()
+            .haveSimpleNameEndingWith("Controller")
+            .should()
+            .dependOnClassesThat(resideInAPackage("org.softspiders.todos.domain.port.api.."))
+            .andShould(REST_DEPENDENCY_ARCH_CONDITION);
 
+    /**
+     * Architecture test to check if controller depends on single primary port
+     */
+    @ArchTest
+    public static final ArchRule REST_CONSTRUCTOR_ARCH_RULE = constructors()
+            .that()
+            .areDeclaredInClassesThat()
+            .resideInAPackage("org.softspiders.todos.adapter.rest..")
+            .and()
+            .areDeclaredInClassesThat()
+            .haveSimpleNameEndingWith("Controller")
+            .should(REST_CONSTRUCTOR_ARCH_CONDITION);
 
     static class RestDependencyArchCondition extends ArchCondition<JavaClass> {
 

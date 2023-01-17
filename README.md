@@ -4,8 +4,8 @@
     </a>
 </div> 
 
-# ToDo restful service starter with hexagonal architecture on Spring Boot, PostgreSQL, Flyway, Testcontainers, ArchUnit,
-Swagger and REST Assured
+# ToDo restful service starter with hexagonal architecture on Spring Boot, PostgreSQL, Flyway,
+Swagger, Testcontainers, with ArchUnit, REST Assured and Selenium testing
 
 ## Feature tags
 
@@ -17,6 +17,7 @@ Swagger and REST Assured
 - postgres
 - rest
 - rest-assured
+- selenium
 - spring-boot
 - spring-data-jpa
 - starter

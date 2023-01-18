@@ -34,7 +34,7 @@
 
 ## Direct descendant
 
-[***+ rest***: springboot-psql-testcontainers-restful-todo](https://github.com/softspiders/springboot-postgres-testcontainers-restassured-selenium-restful-todo-app-starter/blob/spring-boot-psql-testcontainers-restful-hexagonal-todo/README.md)
+[***+ rest***: springboot-psql-testcontainers-restful-todo](https://github.com/softspiders/springboot-postgres-testcontainers-restassured-selenium-restful-todo-app-starter/tree/spring-boot-psql-testcontainers-archunit-restful-hexagonal-todo#readme)
 
 ---
 

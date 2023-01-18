@@ -4,8 +4,7 @@
     </a>
 </div> 
 
-# ToDo restful service starter with hexagonal architecture on Spring Boot, PostgreSQL, Flyway, Testcontainers, ArchUnit,
-Swagger and REST Assured
+# ToDo service starter with Hexagonal architecture on Spring Boot, PostgreSQL, Flyway, Swagger, testing support based on ArchUnit, Testcontainers and REST Assured
 
 ## Feature tags
 

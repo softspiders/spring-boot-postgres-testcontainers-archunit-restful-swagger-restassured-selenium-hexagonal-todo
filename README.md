@@ -4,7 +4,7 @@
     </a>
 </div> 
 
-# Spring Boot with PostgresSQL, Flyway, Testcontainers, REST Assured Restful ToDo application starter
+# Spring Boot with PostgresSQL, Flyway, Testcontainers on Spring Data JPA ToDo application starter
 
 
 ## Feature tags
@@ -22,7 +22,7 @@
 
 ## Direct descendant
 
-[***+ rest***: springboot-psql-testcontainers-restful-todo](https://github.com/softspiders/springboot-postgres-testcontainers-restassured-selenium-restful-todo-app-starter/tree/spring-boot-psql-testcontainers-todo#readme)
+[***+ archunit, hexagonal***: springboot-psql-testcontainers-restful-todo](https://github.com/softspiders/springboot-postgres-testcontainers-restassured-selenium-restful-todo-app-starter/tree/springboot-psql-testcontainers-archunit-hexagonal-todo#readme)
 
 ---
 

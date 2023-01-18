@@ -12,6 +12,7 @@
 - flyway
 - hexagonal
 - maven
+- mapstruct
 - postgres
 - rest
 - spring-boot

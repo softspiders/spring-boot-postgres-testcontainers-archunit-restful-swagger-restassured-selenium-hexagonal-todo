@@ -4,7 +4,7 @@
     </a>
 </div> 
 
-# ToDo service starter with hexagonal architecture on Spring Boot, PostgreSQL, Flyway, Swagger, testing based on ArchUnit, Testcontainers, REST Assured and Selenium
+# ToDo service starter with Hexagonal architecture on Spring Boot, PostgreSQL, Flyway, Swagger, testing based on ArchUnit, Testcontainers, REST Assured and Selenium
 
 ## Feature tags
 

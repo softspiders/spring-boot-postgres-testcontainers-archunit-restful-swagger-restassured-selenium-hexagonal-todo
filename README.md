@@ -4,7 +4,7 @@
     </a>
 </div> 
 
-# ToDo service starter with Hexagonal architecture on Spring Boot, PostgreSQL, Flyway, Swagger, testing support based on ArchUnit, Testcontainers and REST Assured
+# ToDo service starter with Hexagonal architecture on Spring Boot, PostgreSQL, Flyway, Swagger, testing support based on ArchUnit and Testcontainers
 
 ## Feature tags
 
@@ -15,7 +15,6 @@
 - mapstruct
 - postgres
 - rest
-- rest-assured
 - spring-boot
 - spring-data-jpa
 - starter
@@ -28,11 +27,11 @@
 
 ## Direct ancestor
 
-[***- restassured***: spring-boot-psql-testcontainers-todo](https://github.com/softspiders/springboot-postgres-testcontainers-restassured-selenium-restful-todo-app-starter/tree/springboot-psql-testcontainers-restassured-hexagonal-todo#readme)
+[***- swagger***: spring-boot-psql-testcontainers-todo](https://github.com/softspiders/springboot-postgres-testcontainers-restful-todo-app-starter/tree/springboot-psql-testcontainers-hexagonal-todo#readme)
 
 ## Direct descendant
 
-[***+ selenium***: spring-boot-psql-testcontainers-restassured-restful-todo](https://github.com/softspiders/springboot-postgres-testcontainers-restassured-selenium-restful-todo-app-starter/tree/spring-boot-psql-testcontainers-archunit-restful-swagger-restassured-selenium-hexagonal-todo#readme)
+[***+ restassured***: spring-boot-psql-testcontainers-restful-swagger-restassured-restful-todo](https://github.com/softspiders/springboot-postgres-testcontainers-restassured-selenium-restful-todo-app-starter/tree/spring-boot-psql-testcontainers-archunit-restful-swagger-restassured-hexagonal-todo#readme)
 
 ---
 

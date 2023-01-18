@@ -28,7 +28,7 @@
 
 ## Direct ancestors
 
-[***- archunit, hexagonal***: springboot-psql-testcontainers-todo](https://github.com/softspiders/springboot-postgres-testcontainers-restassured-selenium-restful-todo-app-starter#readme)
+[***- archunit, hexagonal***: springboot-psql-testcontainers-todo](https://github.com/softspiders/springboot-postgres-testcontainers-restassured-selenium-restful-todo-app-starter/tree/spring-boot-psql-testcontainers-todo#readme)
 
 ---
 

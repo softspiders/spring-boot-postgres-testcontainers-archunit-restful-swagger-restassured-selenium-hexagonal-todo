@@ -1,11 +1,11 @@
 package org.softspiders.todos.repository;
 
-import org.softspiders.todos.adapter.jpa.todo.entity.TodoEntity;
+import org.softspiders.todos.adapter.crud.todo.entity.TodoEntity;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.softspiders.todos.adapter.jpa.todo.repository.TodoRepository;
+import org.softspiders.todos.adapter.crud.todo.repository.TodoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;

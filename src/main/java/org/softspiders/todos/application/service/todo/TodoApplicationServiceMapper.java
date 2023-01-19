@@ -10,5 +10,5 @@ public interface TodoApplicationServiceMapper {
 
     TodoApplicationServiceMapper TODO_APPLICATION_SERVICE_MAPPER = getMapper(TodoApplicationServiceMapper.class);
 
-    TodoDomainModel toDomainModel(TodoDomainModel jpaTodo);
+    TodoDomainModel toDomainModel(TodoDomainModel todoDomainModel);
 }

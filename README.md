@@ -27,11 +27,11 @@
 
 ## Direct ancestor
 
-[***- swagger***: spring-boot-psql-testcontainers-todo](https://github.com/softspiders/springboot-postgres-testcontainers-restassured-selenium-restful-todo-app-starter/tree/spring-boot-psql-testcontainers-archunit-restful-hexagonal-todo#readme)
+[- swagger](https://github.com/softspiders/springboot-postgres-testcontainers-restassured-selenium-restful-todo-app-starter/tree/spring-boot-psql-testcontainers-archunit-restful-hexagonal-todo#readme)
 
 ## Direct descendant
 
-[***+ restassured***: spring-boot-psql-testcontainers-restful-swagger-restassured-restful-todo](https://github.com/softspiders/springboot-postgres-testcontainers-restassured-selenium-restful-todo-app-starter/tree/spring-boot-psql-testcontainers-archunit-restful-swagger-restassured-hexagonal-todo#readme)
+[+ restassured](https://github.com/softspiders/springboot-postgres-testcontainers-restassured-selenium-restful-todo-app-starter/tree/spring-boot-psql-testcontainers-archunit-restful-swagger-restassured-hexagonal-todo#readme)
 
 ---
 

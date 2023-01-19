@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * Secondary port is used to manage todos on persistence level
  */
-public interface TodoJpaPort {
+public interface TodoCrudPort {
     /**
      * Gets all created todos
      *

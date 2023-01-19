@@ -15,12 +15,10 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Stream;
 
-import static com.tngtech.archunit.core.domain.JavaClass.Predicates.resideInAPackage;
 import static com.tngtech.archunit.core.domain.JavaClass.Predicates.resideOutsideOfPackage;
 import static com.tngtech.archunit.core.domain.JavaModifier.STATIC;
 import static com.tngtech.archunit.lang.SimpleConditionEvent.violated;
 import static com.tngtech.archunit.lang.syntax.ArchRuleDefinition.classes;
-import static com.tngtech.archunit.lang.syntax.ArchRuleDefinition.constructors;
 import static com.tngtech.archunit.library.Architectures.onionArchitecture;
 import static com.tngtech.archunit.library.GeneralCodingRules.*;
 import static com.tngtech.archunit.library.GeneralCodingRules.NO_CLASSES_SHOULD_ACCESS_STANDARD_STREAMS;
@@ -66,26 +64,8 @@ public class ArchitectureTest {
     public static final ArchRule HEXAGONAL_ARCH_RULE = onionArchitecture()
             .domainModels("org.softspiders.todos.domain.model..")
             .domainServices("org.softspiders.todos.domain.port..")
-            .adapter("jpa", "org.softspiders.todos.adapter.jpa..");
+            .adapter("crud_jpa", "org.softspiders.todos.adapter.crud_jpa..");
 
-//            .applicationServices("org.softspiders.todos.application..")
-//            .adapter("rest", "org.softspiders.todos.adapter.rest..");
-
-//    /**
-//     * Architecture test to check following arch conditions:
-//     * <ul>
-//     *     <li>Primary port is dependent on primary ports from other packages</li>
-//     *     <li>Primary port is dependent on secondary ports from same package</li>
-//     * </ul>
-//     */
-//    @ArchTest
-//    public static final ArchRule PRIMARY_PORT_ARCH_RULE = classes()
-//            .that()
-//            .resideInAPackage("org.softspiders.todos.application.service..")
-//            .and()
-//            .haveSimpleNameEndingWith("ApplicationService")
-//            .should(PRIMARY_PORT_ARCH_CONDITION);
-//
     /**
      * Architecture test to check following arch conditions:
      * <ul>
@@ -103,34 +83,6 @@ public class ArchitectureTest {
             .should(SECONDARY_PORT_ARCH_CONDITION)
             .andShould()
             .dependOnClassesThat(resideOutsideOfPackage("org.softspiders.todos.domain.port.spi.."));
-
-
-//    /**
-//     * Architecture test to check if controller depends on primary port from the same package
-//     */
-//    @ArchTest
-//    public static final ArchRule REST_DEPENDENCY_ARCH_RULE = classes()
-//            .that()
-//            .resideInAPackage("org.softspiders.todos.adapter.rest..")
-//            .and()
-//            .haveSimpleNameEndingWith("Controller")
-//            .should()
-//            .dependOnClassesThat(resideInAPackage("org.softspiders.todos.domain.port.api.."))
-//            .andShould(REST_DEPENDENCY_ARCH_CONDITION);
-//
-//    /**
-//     * Architecture test to check if controller depends on single primary port
-//     */
-//    @ArchTest
-//    public static final ArchRule REST_CONSTRUCTOR_ARCH_RULE = constructors()
-//            .that()
-//            .areDeclaredInClassesThat()
-//            .resideInAPackage("org.softspiders.todos.adapter.rest..")
-//            .and()
-//            .areDeclaredInClassesThat()
-//            .haveSimpleNameEndingWith("Controller")
-//            .should(REST_CONSTRUCTOR_ARCH_CONDITION);
-
 
     static class RestDependencyArchCondition extends ArchCondition<JavaClass> {
 

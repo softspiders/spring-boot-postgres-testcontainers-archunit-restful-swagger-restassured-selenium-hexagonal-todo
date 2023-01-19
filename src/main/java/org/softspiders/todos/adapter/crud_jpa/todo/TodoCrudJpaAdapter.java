@@ -1,15 +1,15 @@
-package org.softspiders.todos.adapter.crud.todo;
+package org.softspiders.todos.adapter.crud_jpa.todo;
 
 import lombok.RequiredArgsConstructor;
-import org.softspiders.todos.adapter.crud.todo.entity.TodoEntity;
-import org.softspiders.todos.adapter.crud.todo.repository.TodoRepository;
+import org.softspiders.todos.adapter.crud_jpa.todo.entity.TodoEntity;
+import org.softspiders.todos.adapter.crud_jpa.todo.repository.TodoRepository;
 import org.softspiders.todos.domain.port.spi.todo.TodoCrudPort;
 import org.softspiders.todos.domain.model.todo.TodoDomainModel;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
 
-import static org.softspiders.todos.adapter.crud.todo.mapper.TodoJpaMapper.TODO_JPA_MAPPER;
+import static org.softspiders.todos.adapter.crud_jpa.todo.mapper.TodoJpaMapper.TODO_JPA_MAPPER;
 
 @Component
 @RequiredArgsConstructor

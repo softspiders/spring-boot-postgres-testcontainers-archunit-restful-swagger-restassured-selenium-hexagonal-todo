@@ -1,6 +1,6 @@
-package org.softspiders.todos.adapter.crud.todo.repository;
+package org.softspiders.todos.adapter.crud_jpa.todo.repository;
 
-import org.softspiders.todos.adapter.crud.todo.entity.TodoEntity;
+import org.softspiders.todos.adapter.crud_jpa.todo.entity.TodoEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 

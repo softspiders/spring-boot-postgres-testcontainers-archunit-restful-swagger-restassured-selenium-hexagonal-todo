@@ -64,7 +64,7 @@ public class ArchitectureTest {
     public static final ArchRule HEXAGONAL_ARCH_RULE = onionArchitecture()
             .domainModels("org.softspiders.todos.domain.model..")
             .domainServices("org.softspiders.todos.domain.port..")
-            .adapter("crud", "org.softspiders.todos.adapter.crud..")
+            .adapter("crud_jpa", "org.softspiders.todos.adapter.crud_jpa..")
             .applicationServices("org.softspiders.todos.application..")
             .adapter("rest", "org.softspiders.todos.adapter.rest..");
 

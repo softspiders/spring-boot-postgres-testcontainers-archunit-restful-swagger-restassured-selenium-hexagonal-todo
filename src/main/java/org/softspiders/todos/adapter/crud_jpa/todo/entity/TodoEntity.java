@@ -1,4 +1,4 @@
-package org.softspiders.todos.adapter.crud.todo.entity;
+package org.softspiders.todos.adapter.crud_jpa.todo.entity;
 
 import org.hibernate.annotations.GenericGenerator;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;

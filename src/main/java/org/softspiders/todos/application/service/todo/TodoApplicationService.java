@@ -3,7 +3,7 @@ package org.softspiders.todos.application.service.todo;
 import lombok.RequiredArgsConstructor;
 import org.softspiders.todos.domain.model.todo.TodoDomainModel;
 import org.softspiders.todos.domain.port.api.todo.TodoServicePort;
-import org.softspiders.todos.domain.port.spi.todo.TodoJpaPort;
+import org.softspiders.todos.domain.port.spi.todo.TodoCrudPort;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -12,7 +12,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class TodoApplicationService implements TodoServicePort {
 
-  private final TodoJpaPort todoJpaPort;
+  private final TodoCrudPort todoJpaPort;
 
   @Override
   public List<TodoDomainModel> getAllTodos() {

@@ -32,7 +32,7 @@
 
 ## Direct descendant
 
-[***+ selenium***: spring-boot-psql-testcontainers-restassured-restful-todo](https://github.com/softspiders/springboot-postgres-testcontainers-restassured-selenium-restful-todo-app-starter/tree/spring-boot-psql-testcontainers-archunit-restful-swagger-restassured-selenium-hexagonal-todo#readme)
+[***+ selenium***: spring-boot-psql-testcontainers-archunit-restful-swagger-restassured-selenium-hexagonal-todo](https://github.com/softspiders/springboot-postgres-testcontainers-restassured-selenium-restful-todo-app-starter/tree/spring-boot-psql-testcontainers-archunit-restful-swagger-restassured-selenium-hexagonal-todo#readme)
 
 ---
 

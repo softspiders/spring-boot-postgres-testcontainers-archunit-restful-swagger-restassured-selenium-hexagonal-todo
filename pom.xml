@@ -8,11 +8,13 @@
 		<version>2.7.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.atomicjar</groupId>
-	<artifactId>testcontainers-java-spring-boot-quickstart</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>testcontainers-java-spring-boot-quickstart</name>
-	<description>Testcontainers Java and Spring Boot QuickStart</description>
+	<groupId>org.softspiders</groupId>
+	<artifactId>softspiders-springboot-jpa-postgres-flyway-restful-todo-starter</artifactId>
+	<version>1.0.0</version>
+	<name>todo-service-starter</name>
+	<description>ToDo restful service starter on Spring Boot and PostgreSQL with Flyway and Swagger support and testing
+		by Testcontainers
+	</description>
 	<properties>
 		<java.version>17</java.version>
 		<testcontainers.version>1.17.5</testcontainers.version>

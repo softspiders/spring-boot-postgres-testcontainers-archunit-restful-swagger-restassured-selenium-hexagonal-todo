@@ -5,6 +5,8 @@
 </div> 
 
 # ToDo service starter with Hexagonal architecture on Spring Boot, PostgreSQL, Flyway, Swagger, testing support based on ArchUnit, Testcontainers, REST Assured and Selenium
+## Architectural layers are divided into subprojects in one Maven monorepository.
+
 
 ## Feature tags
 
@@ -13,6 +15,7 @@
 - hexagonal
 - maven
 - mapstruct
+- monorepo
 - postgres
 - rest
 - rest-assured
@@ -29,7 +32,7 @@
 
 ## Direct ancestor
 
-[- selenium](https://github.com/softspiders/springboot-postgres-testcontainers-restassured-selenium-restful-todo-app-starter/tree/spring-boot-psql-testcontainers-archunit-restful-swagger-restassured-hexagonal-todo#readme)
+[- monorepo](https://github.com/softspiders/spring-boot-psql-testcontainers-archunit-restful-swagger-restassured-selenium-hexagonal-todo/tree/spring-boot-psql-testcontainers-archunit-restful-swagger-restassured-selenium-hexagonal-todo#readme)
 
 ---
 

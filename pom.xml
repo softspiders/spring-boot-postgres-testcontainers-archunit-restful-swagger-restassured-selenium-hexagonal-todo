@@ -8,7 +8,7 @@
 		<version>2.7.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.atomicjar</groupId>
+	<groupId>org.softspiders</groupId>
 	<artifactId>testcontainers-java-spring-boot-quickstart</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>testcontainers-java-spring-boot-quickstart</name>

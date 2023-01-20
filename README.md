@@ -34,6 +34,10 @@
 
 [- monorepo](https://github.com/softspiders/spring-boot-psql-testcontainers-archunit-restful-swagger-restassured-selenium-hexagonal-todo/tree/spring-boot-psql-testcontainers-archunit-restful-swagger-restassured-selenium-hexagonal-todo#readme)
 
+## Direct descendant
+
+[+ monorepo](https://github.com/softspiders/spring-boot-psql-testcontainers-archunit-restful-swagger-restassured-selenium-hexagonal-todo/tree/spring-boot-psql-testcontainers-archunit-restful-swagger-restassured-selenium-hexagonal-todo#readme)
+
 ---
 
 ## Author

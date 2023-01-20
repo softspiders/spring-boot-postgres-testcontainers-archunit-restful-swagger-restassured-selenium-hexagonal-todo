@@ -4,7 +4,7 @@
     </a>
 </div> 
 
-# ToDo service starter with Hexagonal architecture on Spring Boot, PostgreSQL, Flyway, Swagger, testing support based on ArchUnit, Testcontainers, REST Assured and Selenium
+# ToDo service starter with Hexagonal architecture on Spring Boot and PostgreSQL with Flyway and Swagger support, with testing support based on ArchUnit, Testcontainers, REST Assured and Selenium
 ## Architectural layers are divided into subprojects in one Maven monorepository.
 
 

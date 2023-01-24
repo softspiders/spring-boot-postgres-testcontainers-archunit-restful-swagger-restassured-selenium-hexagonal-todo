@@ -1,1 +1,4 @@
 /target/
+/application/target/
+/domain/target/
+/adapter/target/

@@ -3,8 +3,8 @@
          xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>starter</artifactId>
-        <groupId>org.softspiders.todos</groupId>
+        <artifactId>softspiders-springboot-jpa-postgres-flyway-archunit-hexagonal-restful-restassured-swagger-selenium-monorepo-todo-starter</artifactId>
+        <groupId>org.softspiders.starters</groupId>
         <version>1.0.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>

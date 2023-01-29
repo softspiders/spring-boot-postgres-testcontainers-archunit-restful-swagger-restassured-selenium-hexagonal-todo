@@ -22,11 +22,27 @@
             <groupId>org.softspiders.starters</groupId>
             <artifactId>domain</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.softspiders.starters</groupId>
+            <artifactId>adapter</artifactId>
+        </dependency>
 
         <!-- External Dependencies -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.tngtech.archunit</groupId>
+            <artifactId>archunit-junit5-api</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.tngtech.archunit</groupId>
+            <artifactId>archunit-junit5-engine</artifactId>
+            <scope>test</scope>
         </dependency>
 
 <!--        <dependency>-->

@@ -43,6 +43,13 @@
 
 ---
 
+## Inspiration
+
+- [Valery Sloboda.Hexagonal demo](https://github.com/Antilamer1709/hexagonal-demo)
+- [Testcontainers SpringBoot Quickstart](https://github.com/testcontainers/testcontainers-java-spring-boot-quickstart)
+
+---
+
 ## Requirements
 
 - [Maven](https://maven.apache.org/)

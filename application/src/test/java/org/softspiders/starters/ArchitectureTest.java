@@ -106,7 +106,6 @@ public class ArchitectureTest {
     /**
      * Architecture test to check if controller depends on primary port from the same package
      */
-    @ArchIgnore
     @ArchTest
     public static final ArchRule REST_DEPENDENCY_ARCH_RULE = classes()
             .that()

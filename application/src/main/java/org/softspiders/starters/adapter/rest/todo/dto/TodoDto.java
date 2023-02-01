@@ -1,4 +1,4 @@
-package org.softspiders.starters.adapter.rest.dto;
+package org.softspiders.starters.adapter.rest.todo.dto;
 
 import lombok.Data;
 

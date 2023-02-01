@@ -1,12 +1,12 @@
-package org.softspiders.starters.adapter.rest;
+package org.softspiders.starters.adapter.rest.todo;
 
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import io.swagger.v3.oas.annotations.Operation;
-import org.softspiders.starters.adapter.rest.dto.CreateTodoDto;
-import org.softspiders.starters.adapter.rest.dto.TodoDetailsDto;
-import org.softspiders.starters.adapter.rest.dto.TodoDto;
+import org.softspiders.starters.adapter.rest.todo.dto.CreateTodoDto;
+import org.softspiders.starters.adapter.rest.todo.dto.TodoDetailsDto;
+import org.softspiders.starters.adapter.rest.todo.dto.TodoDto;
 import org.softspiders.starters.domain.model.todo.TodoDomainModel;
 import org.softspiders.starters.domain.port.api.todo.TodoServicePort;
 import org.springframework.http.HttpStatus;
@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 
-import static org.softspiders.starters.adapter.rest.mapper.TodoRestMapper.TODO_REST_MAPPER;
+import static org.softspiders.starters.adapter.rest.todo.mapper.TodoRestMapper.TODO_REST_MAPPER;
 
 @Tag(name = "todo", description = "Todo tasks")
 @RestController

@@ -1,9 +1,9 @@
-package org.softspiders.starters.adapter.rest.mapper;
+package org.softspiders.starters.adapter.rest.todo.mapper;
 
 import org.mapstruct.Mapper;
-import org.softspiders.starters.adapter.rest.dto.CreateTodoDto;
-import org.softspiders.starters.adapter.rest.dto.TodoDetailsDto;
-import org.softspiders.starters.adapter.rest.dto.TodoDto;
+import org.softspiders.starters.adapter.rest.todo.dto.CreateTodoDto;
+import org.softspiders.starters.adapter.rest.todo.dto.TodoDetailsDto;
+import org.softspiders.starters.adapter.rest.todo.dto.TodoDto;
 import org.softspiders.starters.domain.model.todo.TodoDomainModel;
 
 import java.util.List;

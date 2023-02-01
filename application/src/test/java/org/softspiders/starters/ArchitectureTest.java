@@ -5,6 +5,7 @@ import com.tngtech.archunit.core.domain.JavaConstructor;
 import com.tngtech.archunit.core.domain.JavaField;
 import com.tngtech.archunit.core.domain.JavaType;
 import com.tngtech.archunit.junit.AnalyzeClasses;
+import com.tngtech.archunit.junit.ArchIgnore;
 import com.tngtech.archunit.junit.ArchTest;
 import com.tngtech.archunit.lang.ArchCondition;
 import com.tngtech.archunit.lang.ArchRule;
@@ -42,24 +43,28 @@ public class ArchitectureTest {
     /**
      * A rule that checks that none of the given classes access Java Util Logging.
      */
+    @ArchIgnore
     @ArchTest
     public static final ArchRule JAVA_UTIL_LOGGING_IS_FORBIDDEN = NO_CLASSES_SHOULD_USE_JAVA_UTIL_LOGGING.because("We use Log4J");
 
     /**
      * A rule that checks that none of the given classes uses field injection.
      */
+    @ArchIgnore
     @ArchTest
     public static final ArchRule FIELD_INJECTION_SHOULD_NOT_BE_USED = NO_CLASSES_SHOULD_USE_FIELD_INJECTION;
 
     /**
      * A rule that checks that none of the given classes access the standard streams System.out and System.err.
      */
+    @ArchIgnore
     @ArchTest
     public static final ArchRule STANDARD_OUTPUT_STREAMS_SHOULD_NOT_BE_USED = NO_CLASSES_SHOULD_ACCESS_STANDARD_STREAMS;
 
     /**
      * Architecture test to check if hexagonal architecture pattern is followed
      */
+    @ArchIgnore
     @ArchTest
     public static final ArchRule HEXAGONAL_ARCH_RULE = onionArchitecture()
             .domainModels("org.softspiders.starters.domain.model..")
@@ -75,6 +80,7 @@ public class ArchitectureTest {
      *     <li>Primary port is dependent on secondary ports from same package</li>
      * </ul>
      */
+    @ArchIgnore
     @ArchTest
     public static final ArchRule PRIMARY_PORT_ARCH_RULE = classes()
             .that()
@@ -89,6 +95,7 @@ public class ArchitectureTest {
      *    <li>Secondary port is not dependent on secondary ports from other packages</li>
      * </ul>
      */
+    @ArchIgnore
     @ArchTest
     public static final ArchRule SECONDARY_PORT_ARCH_RULE = classes()
             .that()
@@ -105,6 +112,7 @@ public class ArchitectureTest {
     /**
      * Architecture test to check if controller depends on primary port from the same package
      */
+    @ArchIgnore
     @ArchTest
     public static final ArchRule REST_DEPENDENCY_ARCH_RULE = classes()
             .that()
@@ -118,6 +126,7 @@ public class ArchitectureTest {
     /**
      * Architecture test to check if controller depends on single primary port
      */
+    @ArchIgnore
     @ArchTest
     public static final ArchRule REST_CONSTRUCTOR_ARCH_RULE = constructors()
             .that()

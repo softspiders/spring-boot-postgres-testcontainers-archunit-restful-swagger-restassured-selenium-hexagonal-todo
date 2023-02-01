@@ -1,4 +1,4 @@
-package org.softspiders.starters.repository;
+package org.softspiders.starters.adapter.repository;
 
 import org.softspiders.starters.adapter.crud_jpa.todo.entity.TodoEntity;
 import org.junit.jupiter.api.AfterAll;

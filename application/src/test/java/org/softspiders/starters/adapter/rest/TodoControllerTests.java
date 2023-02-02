@@ -1,4 +1,4 @@
-package org.softspiders.starters.adapter.web;
+package org.softspiders.starters.adapter.rest;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;

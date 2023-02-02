@@ -73,13 +73,6 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-
-<!--        <dependency>-->
-<!--            <groupId>org.liquibase</groupId>-->
-<!--            <artifactId>liquibase-core</artifactId>-->
-<!--            <scope>test</scope>-->
-<!--        </dependency>-->
-
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
@@ -118,40 +111,6 @@
 
     <build>
         <plugins>
-<!--            <plugin>-->
-<!--                <groupId>org.codehaus.mojo</groupId>-->
-<!--                <artifactId>jaxb2-maven-plugin</artifactId>-->
-<!--                <version>2.5.0</version>-->
-<!--                <executions>-->
-<!--                    <execution>-->
-<!--                        <id>xjc</id>-->
-<!--                        <goals>-->
-<!--                            <goal>xjc</goal>-->
-<!--                        </goals>-->
-<!--                    </execution>-->
-<!--                </executions>-->
-<!--                <configuration>-->
-<!--                    <sources>-->
-<!--                        <source>${project.basedir}/src/main/resources/orders.xsd</source>-->
-<!--                    </sources>-->
-<!--                </configuration>-->
-<!--            </plugin>-->
-
-<!--            <plugin>-->
-<!--                <groupId>org.liquibase</groupId>-->
-<!--                <artifactId>liquibase-maven-plugin</artifactId>-->
-<!--                <version>${liquibase.version}</version>-->
-<!--                <configuration>-->
-<!--                    &lt;!&ndash;suppress UnresolvedMavenProperty &ndash;&gt;-->
-<!--                    <referenceUrl>hibernate:spring:com.hexagonal.demo.adapter.jpa?dialect=${hibernate.dialect}&amp;hibernate.physical_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy&amp;hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy</referenceUrl>-->
-<!--                    <changeLogFile>${project.basedir}/src/main/resources/db/changelog/db.changelog-master.xml</changeLogFile>-->
-<!--                    <diffExcludeObjects>DATABASECHANGELOG,DATABASECHANGELOGLOCK</diffExcludeObjects>-->
-<!--                    <diffChangeLogFile>${project.basedir}/src/main/resources/db/changelog/diff.xml</diffChangeLogFile>-->
-<!--                    <systemProperties>-->
-<!--                        <user.name>hexagonal</user.name>-->
-<!--                    </systemProperties>-->
-<!--                </configuration>-->
-<!--            </plugin>-->
         </plugins>
     </build>
 </project>

@@ -1,7 +1,8 @@
 package org.softspiders.starters.domain.port.spi.todo;
 
-import java.util.List;
 import org.softspiders.starters.domain.model.todo.TodoDomainModel;
+
+import java.util.List;
 
 /**
  * Secondary port is used to manage todos on persistence level

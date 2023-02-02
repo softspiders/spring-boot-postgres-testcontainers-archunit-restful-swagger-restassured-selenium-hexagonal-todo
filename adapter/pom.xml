@@ -20,6 +20,7 @@
         <!-- Internal Dependencies -->
         <dependency>
             <groupId>org.softspiders.starters</groupId>
+<!--            <artifactId>domain</artifactId>-->
             <artifactId>domain</artifactId>
         </dependency>
 

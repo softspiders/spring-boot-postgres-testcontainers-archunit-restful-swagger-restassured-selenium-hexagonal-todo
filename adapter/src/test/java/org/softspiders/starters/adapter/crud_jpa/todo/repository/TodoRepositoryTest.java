@@ -1,14 +1,15 @@
-package org.softspiders.starters.adapter.repository;
+package org.softspiders.starters.adapter.crud_jpa.todo.repository;
 
-import org.softspiders.starters.adapter.crud_jpa.todo.entity.TodoEntity;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.softspiders.starters.adapter.crud_jpa.todo.repository.TodoRepository;
+import org.softspiders.starters.adapter.crud_jpa.JpaConfig;
+import org.softspiders.starters.adapter.crud_jpa.todo.entity.TodoEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
+import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.DynamicPropertyRegistry;
 import org.springframework.test.context.DynamicPropertySource;
 import org.testcontainers.containers.PostgreSQLContainer;
@@ -17,6 +18,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @DataJpaTest
 @AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
+@ContextConfiguration(classes = {JpaConfig.class})
 class TodoRepositoryTest {
     static PostgreSQLContainer<?> postgres = new PostgreSQLContainer<>("postgres:14-alpine")
             .withExposedPorts(5432);

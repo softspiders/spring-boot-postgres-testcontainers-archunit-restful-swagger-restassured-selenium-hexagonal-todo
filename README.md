@@ -57,9 +57,8 @@
 # To run locally
 1) Run ```mvn package```
 2) Run a Postgres database from the container: ```docker run --name hexagonal_postgres -d -p 5434:5432 -e POSTGRES_USER=sa -e POSTGRES_PASSWORD=password -e POSTGRES_DB=hexagonal postgres```
-3) Build it with maven to generate classes. ```mvn compile``` will do the job. (in Intellij you may need to reload maven project to find generated classes from the ```soap.hexagonal.demo..``` package)
-4) Run the main class ```DemoApplication``` as any other Spring Boot application: ```java -jar application/target/application-1.0.0.jar```.
-5) Take a look at http://localhost:8080/swagger-ui.html.
+3) Run the main class ```DemoApplication``` as any other Spring Boot application: ```java -jar application/target/application-1.0.0.jar```.
+4) Take a look at http://localhost:8080/swagger-ui.html.
 
 
 ## Run tests

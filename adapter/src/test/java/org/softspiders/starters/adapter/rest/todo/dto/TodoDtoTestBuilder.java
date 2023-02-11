@@ -41,7 +41,7 @@ public class TodoDtoTestBuilder {
 
             newTodo.setId(index + "");
             newTodo.setTitle(todo.getTitle() + index);
-            newTodo.setOrder(todo.getOrder() + index * 10);
+            newTodo.setOrder(todo.getOrder() + index - 1);
 
             result.add(newTodo);
         });

@@ -1,7 +1,6 @@
 package org.softspiders.starters.adapter.rest.todo;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.softspiders.starters.adapter.rest.todo.dto.TodoDetailsDtoTestBuilder;
@@ -36,7 +35,6 @@ class TodoControllerIntegrationTest {
     @MockBean
     private TodoServicePort todoServicePort;
 
-    @Disabled
     @Test
     void shouldFindAllTodos() throws Exception {
         when(todoServicePort.getAllTodos()).thenReturn(

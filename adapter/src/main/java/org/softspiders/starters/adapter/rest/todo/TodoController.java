@@ -17,7 +17,7 @@ import javax.validation.Valid;
 
 import static org.softspiders.starters.adapter.rest.todo.mapper.TodoRestMapper.TODO_REST_MAPPER;
 
-@Tag(name = "todo", description = "Todo tasks")
+@Tag(name = "org/softspiders/starters/domain/model/todo", description = "Todo tasks")
 @RestController
 @RequestMapping("/todos")
 @RequiredArgsConstructor

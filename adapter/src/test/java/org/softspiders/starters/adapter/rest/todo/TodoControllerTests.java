@@ -21,8 +21,9 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.Matchers.hasSize;
 
 // TODO Make it working without errors
-//@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-//@ContextConfiguration(classes = {TodoController.class})
+@Disabled("Disabled while testing debug")
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+@ContextConfiguration(classes = {TodoController.class})
 public class TodoControllerTests {
     @LocalServerPort
     private Integer port;
@@ -55,7 +56,6 @@ public class TodoControllerTests {
         RestAssured.baseURI = "http://localhost:" + port;
     }
 
-    @Disabled("Disabled while testing debug")
     @Test
      void shouldGetAllTodos() {
         List<TodoEntity> todos = List.of(
@@ -73,7 +73,6 @@ public class TodoControllerTests {
                 .body(".", hasSize(2));
     }
 
-    @Disabled("Disabled while testing debug")
     @Test
     void shouldGetTodoById() {
         TodoEntity todo = todoRepository.save(new TodoEntity(null, "Todo Item 1", false, 1));
@@ -89,7 +88,6 @@ public class TodoControllerTests {
                 .body("order", is(1));
     }
 
-    @Disabled("Disabled while testing debug")
     @Test
     void shouldCreateTodoSuccessfully() {
         given()
@@ -112,7 +110,6 @@ public class TodoControllerTests {
                 .body("order", is(1));
     }
 
-    @Disabled("Disabled while testing debug")
     @Test
     void shouldDeleteTodoById() {
         TodoEntity todo = todoRepository.save(new TodoEntity(null, "Todo Item 1", false, 1));

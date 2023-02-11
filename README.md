@@ -16,6 +16,7 @@
 - hexagonal
 - maven
 - mapstruct
+- mockmvc
 - monorepo
 - postgres
 - rest

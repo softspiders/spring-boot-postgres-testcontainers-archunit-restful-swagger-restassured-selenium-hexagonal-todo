@@ -11,7 +11,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.softspiders.starters.adapter.rest.todo.mapper.TodoRestMapper.TODO_REST_MAPPER;
 
-@Disabled("TODO enable it!")
 @SpringBootTest(classes = TodoRestMapper.class)
 class TodoRestMapperTest {
 

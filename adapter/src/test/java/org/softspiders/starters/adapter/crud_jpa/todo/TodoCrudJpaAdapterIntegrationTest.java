@@ -10,7 +10,6 @@ import org.springframework.test.context.ContextConfiguration;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-@Disabled("Disabled temporarily")
 @ContextConfiguration(classes = {TodoCrudJpaAdapter.class})
 public class TodoCrudJpaAdapterIntegrationTest extends AbstractAdapterIntegrationTest {
 

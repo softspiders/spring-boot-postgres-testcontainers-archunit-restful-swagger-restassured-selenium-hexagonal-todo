@@ -50,11 +50,11 @@ public class TodoDomainModelTestBuilder {
             var newTodo = new TodoDomainModel();
 
             if (nonNull(todo.getId()))
-                newTodo.setId(todo.getId() + (index - 1));
+                newTodo.setId(Integer.parseInt(todo.getId()) + index - 1 + "");
             if (nonNull(todo.getTitle()))
                 newTodo.setTitle(todo.getTitle() + index);
             if (nonNull(todo.getOrder()))
-                newTodo.setOrder(todo.getOrder() + index * 10);
+                newTodo.setOrder(todo.getOrder() + index - 1);
 
             result.add(newTodo);
         });

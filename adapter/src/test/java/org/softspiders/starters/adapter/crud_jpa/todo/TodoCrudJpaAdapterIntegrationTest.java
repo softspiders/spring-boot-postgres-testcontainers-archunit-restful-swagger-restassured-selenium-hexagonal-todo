@@ -1,7 +1,6 @@
 package org.softspiders.starters.adapter.crud_jpa.todo;
 
 import com.github.database.rider.core.api.dataset.DataSet;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.softspiders.starters.adapter.crud_jpa.AbstractAdapterIntegrationTest;
 import org.softspiders.starters.domain.model.todo.TodoDomainModelTestBuilder;
@@ -34,7 +33,6 @@ public class TodoCrudJpaAdapterIntegrationTest extends AbstractAdapterIntegratio
     @Test
     @DataSet(value = {"todos.xml"})
     void shouldGetAllTodoByIds() {
-//        var actual = underTest.getAllTodoByIds(List.of("10001", "10002"));
         var actual = underTest.getAllTodos();
 
         assertThat(actual)

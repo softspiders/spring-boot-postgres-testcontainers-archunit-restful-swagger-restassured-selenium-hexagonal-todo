@@ -11,6 +11,7 @@
 ## Feature tags
 
 - archunit
+- dbunit
 - flyway
 - hexagonal
 - maven

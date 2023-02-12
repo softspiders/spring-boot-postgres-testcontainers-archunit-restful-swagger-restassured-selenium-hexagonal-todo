@@ -1,4 +1,4 @@
-package org.softspiders.starters.application.service.todo;
+package org.softspiders.starters.application.service.todo.mapper;
 
 import org.mapstruct.Mapper;
 import org.softspiders.starters.domain.model.todo.TodoDomainModel;

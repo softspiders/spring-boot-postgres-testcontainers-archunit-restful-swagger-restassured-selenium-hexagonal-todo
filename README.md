@@ -11,6 +11,7 @@
 ## Feature tags
 
 - archunit
+- assertj
 - dbunit
 - flyway
 - hexagonal

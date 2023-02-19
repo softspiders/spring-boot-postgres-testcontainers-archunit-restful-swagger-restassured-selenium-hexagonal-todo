@@ -59,7 +59,7 @@
 
 # To run locally
 1) Run ```mvn package```
-2) Run a Postgres database from the container: ```docker run --name hexagonal_postgres -d -p 5434:5432 -e POSTGRES_USER=sa -e POSTGRES_PASSWORD=password -e POSTGRES_DB=hexagonal postgres```
+2) Run a Postgres database from the container: ```docker run --name todos_postgres -d -p 5434:5432 -e POSTGRES_USER=sa -e POSTGRES_PASSWORD=password -e POSTGRES_DB=todos postgres```
 3) Run the main class ```DemoApplication``` as any other Spring Boot application: ```java -jar application/target/application-1.0.0.jar```.
 4) Take a look at http://localhost:8080/swagger-ui.html.
 

@@ -12,7 +12,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @TestPropertySource(properties = {
-    "spring.datasource.url=jdbc:tc:postgresql:14-alpine:///hexagonal"
+    "spring.datasource.url=jdbc:tc:postgresql:14-alpine:///todos"
 })
 class ApplicationTests {
 

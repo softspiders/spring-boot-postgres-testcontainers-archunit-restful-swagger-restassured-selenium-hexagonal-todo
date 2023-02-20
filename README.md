@@ -13,6 +13,7 @@
 - archunit
 - assertj
 - dbunit
+- docker
 - flyway
 - hexagonal
 - maven

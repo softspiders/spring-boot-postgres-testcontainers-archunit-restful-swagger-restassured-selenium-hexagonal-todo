@@ -67,9 +67,9 @@
 # To run in Docker
 1) Run ```mvn package```
 2) Run a Postgres database from the container: ```docker run --name todos_postgres -d -p 5434:5432 -e POSTGRES_USER=sa -e POSTGRES_PASSWORD=password -e POSTGRES_DB=todos postgres```
-3) Build the Docker image: ```docker build --tag=todos:latest .```
-4) Run from image ```docker run -p8887:8888 todos:latest```
-5) Take a look at http://localhost:8080/swagger-ui.html.
+3) Build the Docker image: ```docker build --tag=todos .```
+4) Run from image ```docker run -p 8080:8080 todos```
+5) Take a look at http://localhost:8080.
 
 
 ## Run tests

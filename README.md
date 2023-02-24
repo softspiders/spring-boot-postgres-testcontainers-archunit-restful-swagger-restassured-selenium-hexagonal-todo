@@ -4,7 +4,7 @@
     </a>
 </div> 
 
-# ToDo service starter with Hexagonal architecture on Spring Boot and PostgreSQL with Flyway and Swagger support, with testing support based on ArchUnit, Testcontainers, REST Assured and Selenium
+# Dockerized ToDo service starter with Hexagonal architecture on Spring Boot and PostgreSQL with Flyway and Swagger support, with testing support based on ArchUnit, Testcontainers, REST Assured and Selenium
 ## Architectural layers are divided into subprojects in one Maven monorepository.
 
 
@@ -63,6 +63,13 @@
 2) Run a Postgres database from the container: ```docker run --name todos_postgres -d -p 5434:5432 -e POSTGRES_USER=sa -e POSTGRES_PASSWORD=password -e POSTGRES_DB=todos postgres```
 3) Run the main class ```DemoApplication``` as any other Spring Boot application: ```java -jar application/target/application-1.0.0.jar```.
 4) Take a look at http://localhost:8080/swagger-ui.html.
+
+# To run in Docker
+1) Run ```mvn package```
+2) Run a Postgres database from the container: ```docker run --name todos_postgres -d -p 5434:5432 -e POSTGRES_USER=sa -e POSTGRES_PASSWORD=password -e POSTGRES_DB=todos postgres```
+3) Build the Docker image: ```docker build --tag=todos:latest .```
+4) Run from image ```docker run -p8887:8888 todos:latest```
+5) Take a look at http://localhost:8080/swagger-ui.html.
 
 
 ## Run tests

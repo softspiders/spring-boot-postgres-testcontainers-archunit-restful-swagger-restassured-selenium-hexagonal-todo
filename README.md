@@ -97,6 +97,11 @@ mvnw verify
    ```
 5) Take a look at http://localhost:8080.
 
+# To check the actuator
+
+- Take a look at actuator endpoints at http://localhost:8080/actuator.
+- Take a look at actuator metrics: http://localhost:8080/actuator/metrics.
+
 ### License
 
 Licensed under the [MIT license](./LICENSE)

@@ -4,7 +4,7 @@
     </a>
 </div> 
 
-# Dockerized ToDo service starter with Hexagonal architecture on Spring Boot and PostgreSQL with Flyway, Swagger support, with testing support based on ArchUnit, Testcontainers, REST Assured and Selenium, with monitoring based on Actuator
+# Dockerized ToDo service starter with Hexagonal architecture on Spring Boot and PostgreSQL with Flyway, Swagger support, with testing support based on ArchUnit, Testcontainers, REST Assured and Selenium, with monitoring based on Actuator and Prometheus
 
 ## Feature tags
 
@@ -20,6 +20,7 @@
 - mockmvc
 - monorepo
 - postgres
+- prometheus
 - rest
 - rest-assured
 - selenium
@@ -35,7 +36,7 @@
 
 ## Direct ancestor
 
-[- actuator](https://github.com/softspiders/spring-boot-postgres-testcontainers-archunit-restful-swagger-restassured-selenium-hexagonal-todo/tree/spring-boot-psql-testcontainers-archunit-restful-swagger-restassured-selenium-hexagonal-monorepo-docker-todo#readme)
+[- prometheus](https://github.com/softspiders/spring-boot-postgres-testcontainers-archunit-restful-swagger-restassured-selenium-hexagonal-todo/tree/spring-boot-psql-testcontainers-archunit-restful-swagger-restassured-selenium-hexagonal-monorepo-docker-actuator-todo#readme)
 
 ---
 

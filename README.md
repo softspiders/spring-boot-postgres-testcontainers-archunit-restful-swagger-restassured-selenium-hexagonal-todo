@@ -37,6 +37,10 @@
 
 [- actuator](https://github.com/softspiders/spring-boot-postgres-testcontainers-archunit-restful-swagger-restassured-selenium-hexagonal-todo/tree/spring-boot-psql-testcontainers-archunit-restful-swagger-restassured-selenium-hexagonal-monorepo-docker-todo#readme)
 
+## Direct descendant
+
+[- actuator](https://github.com/softspiders/spring-boot-postgres-testcontainers-archunit-restful-swagger-restassured-selenium-hexagonal-todo/tree/spring-boot-psql-testcontainers-archunit-restful-swagger-restassured-selenium-hexagonal-monorepo-docker-actuator-prometheus#readme)
+
 ---
 
 ## Author

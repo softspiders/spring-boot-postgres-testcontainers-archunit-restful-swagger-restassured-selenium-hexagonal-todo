@@ -103,6 +103,7 @@ mvnw verify
 
 - Take a look at actuator endpoints at http://localhost:8080/actuator.
 - Take a look at actuator metrics: http://localhost:8080/actuator/metrics.
+- Take a look at prometheus metrics: http://localhost:8080/actuator/prometheus.
 
 ### License
 

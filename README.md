@@ -50,6 +50,7 @@
 
 - [Valery Sloboda.Hexagonal demo](https://github.com/Antilamer1709/hexagonal-demo)
 - [Testcontainers SpringBoot Quickstart](https://github.com/testcontainers/testcontainers-java-spring-boot-quickstart)
+- [Integrating Spring Boot App with Prometheus](https://www.youtube.com/watch?v=F7vgtimBUq4&list=PLCjTX1j1zSJYPMFKYQlhvnSYOUJP0m7MD&index=8)
 
 ## Requirements
 

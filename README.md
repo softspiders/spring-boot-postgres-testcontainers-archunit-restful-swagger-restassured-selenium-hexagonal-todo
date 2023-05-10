@@ -4,7 +4,7 @@
     </a>
 </div> 
 
-# Dockerized ToDo service starter with Hexagonal architecture on Spring Boot and PostgreSQL with Flyway, Actuator and Swagger support, with testing support based on ArchUnit, Testcontainers, REST Assured and Selenium
+# Dockerized ToDo service starter with Hexagonal architecture on Spring Boot and PostgreSQL with Flyway, Swagger support, with testing support based on ArchUnit, Testcontainers, REST Assured and Selenium, with monitoring based on Actuator
 
 ## Feature tags
 

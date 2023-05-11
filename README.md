@@ -4,6 +4,8 @@
     </a>
 </div> 
 
+# UNDER DEVELOPMENT
+
 # Dockerized ToDo service starter with Hexagonal architecture on Spring Boot and PostgreSQL with Flyway, Swagger support, with testing support based on ArchUnit, Testcontainers, REST Assured and Selenium, with monitoring based on Actuator and Prometheus
 
 ## Feature tags
@@ -14,6 +16,7 @@
 - dbunit
 - docker
 - flyway
+- grafana
 - hexagonal
 - maven
 - mapstruct
@@ -102,6 +105,9 @@ mvnw verify
 
 - Take a look at actuator endpoints at http://localhost:8080/actuator.
 - Take a look at actuator metrics: http://localhost:8080/actuator/metrics.
+
+# To check the Grafana
+TBD
 
 ### License
 

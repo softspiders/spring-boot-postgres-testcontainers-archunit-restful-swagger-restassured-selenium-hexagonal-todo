@@ -14,15 +14,16 @@
 - spring-boot
 - spring-data-jpa
 - starter
+- swagger
 - template
 - testcontainers
 - todo
 
 ---
 
-## Direct descendant
+## Direct ancestor
 
-[+ archunit, hexagonal](https://github.com/softspiders/springboot-postgres-testcontainers-restassured-selenium-restful-todo-app-starter/tree/springboot-psql-testcontainers-archunit-hexagonal-todo#readme)
+[- swagger](https://github.com/softspiders/springboot-postgres-testcontainers-restassured-selenium-restful-todo-app-starter/tree/springboot-psql-testcontainers#readme)
 
 ---
 

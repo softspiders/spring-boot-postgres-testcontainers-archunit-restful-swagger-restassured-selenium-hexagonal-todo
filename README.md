@@ -46,6 +46,22 @@
 mvnw verify
 ```
 
+# To run locally
+1) Run
+   ```sh
+   mvn package
+   ```
+2) Run a Postgres database from the container:
+   ```sh
+   docker run --name todos_postgres -d -p 5434:5432 -e POSTGRES_USER=sa -e POSTGRES_PASSWORD=password -e POSTGRES_DB=todos postgres
+   ```
+3) Run the Spring Boot application:
+   ```sh
+   java -jar application/target/application-1.0.0.jar
+   ```
+4) Take a look at http://localhost:8080/swagger-ui.html.
+
+
 ### License
 
 Licensed under the [MIT license](./LICENSE)

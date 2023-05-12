@@ -1,4 +1,4 @@
-package org.softspiders.todos;
+package org.softspiders.helloworld;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -4,26 +4,17 @@
     </a>
 </div> 
 
-# Spring Boot with Spring Data JPA, PostgresSQL, Flyway, Testcontainers ToDo service starter
+# Spring Boot with Swagger support, monitoring based on Actuator, Micrometer and Prometheus HelloWorld service starter
 
 
 ## Feature tags
 
-- flyway
-- postgres
+- actuator
+- prometheus
 - spring-boot
-- spring-data-jpa
 - starter
-- swagger
 - template
-- testcontainers
-- todo
-
----
-
-## Direct ancestor
-
-[- swagger](https://github.com/softspiders/spring-boot-postgres-testcontainers-archunit-restful-swagger-restassured-selenium-hexagonal-todo/tree/spring-boot-psql-testcontainers-todo#readme)
+- test
 
 ---
 
@@ -36,7 +27,6 @@
 ## Requirements
 
 - [Maven](https://maven.apache.org/)
-- [Docker](https://docs.docker.com/get-docker/)
 
 ---
 
@@ -51,13 +41,9 @@ mvnw verify
    ```sh
    mvn package
    ```
-2) Run a Postgres database from the container:
+2) Run the Spring Boot application:
    ```sh
-   docker run --name todos_postgres -d -p 5434:5432 -e POSTGRES_USER=sa -e POSTGRES_PASSWORD=password -e POSTGRES_DB=todos postgres
-   ```
-3) Run the Spring Boot application:
-   ```sh
-   java -jar application/target/application-1.0.0.jar
+   mvn spring-boot:run
    ```
 4) Take a look at http://localhost:8080/swagger-ui.html.
 

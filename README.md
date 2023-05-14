@@ -4,7 +4,7 @@
     </a>
 </div> 
 
-# Spring Boot with Spring Data JPA, PostgresSQL, Flyway, Testcontainers ToDo service starter
+# Spring Boot with Spring Data JPA, PostgresSQL, Flyway and Testcontainers ToDo service starter
 
 
 ## Feature tags
